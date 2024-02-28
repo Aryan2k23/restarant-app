@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation-bar */
+.navbar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 80px;
+    display: flex;
+}
+.nav-logo{
+    height: 50px;
+    width: 165px;
+    padding: 10px;
+}
+.logo{
+    background-image:url("../images/logo.png");
+    height: 60px;
+    width: 100%;
+    background-size:cover;
+}
+.add-icon{
+    background-size: cover;
+   width: 100%;
+}
+.fa-solid.fa-bars.fa-2xl{
+    float: right;
+    width: 60px;
+    margin-top: 40px;
+    color: white;
+    
+}
+.fa-solid.fa-bars.fa-2xl:hover{
+color: #444141;
+cursor: pointer;
+}
+.menuWrap{
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0); 
+    position: absolute;
+    right:1px;
+    top:85px;
+    width: 320px;
+    border-radius: 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+.menuWrap.open-menu{
+    max-height: 400px;
+}
+ a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0;
+    color: rgb(185, 184, 184);
+    font-size: 20px;
+    padding: 5px;
+    gap: 5px;
+    
+}
+
+a:hover{
+    color: white;
+    font-weight: 600px;
+    transform:translateX(5px);
+    transition: transform 0.25s;
+   
+}
+
+/* Hero-section */
+.hero-section{
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.hero-img{
+     height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-img img{
+    width: 500px;
+}
+
+/* special dishes     */
+
+.todaySpecial{
+    display: flex;
+   justify-content: space-evenly; 
+   background-color: black;
+  
+
+}
+
+h2 { 
+    color:white;
+    font-size: 40px;
+    display : flex;
+    margin: auto;
+}
+/* .box{
+    border: 2px solid rgb(255, 0, 0);
+    height: 400px;
+    width: 24%;
+    background-color: white;
+    margin-top: 70px; 
+    
+} */

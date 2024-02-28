@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninjagrill</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dosis:wght@200..800&display=swap')
+        </style>
+<script src="https://kit.fontawesome.com/31e996a355.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <div class="logo"></div>
+                </div>
+                
+                <div class="add-icon">
+                    <i class="fa-solid fa-bars fa-2xl " onclick="pointMenu()"></i>
+                </div>
+
+            </div>
+             <!-- Drop-down-menu -->
+             <div class="menuWrap" id="pMenu">
+            <div class="menu">
+                <a href="#">
+                    <i class="fa-solid fa-user" style = "color : #ffffff;"></i>
+                        <p>Personal details</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff;"></i>
+                        <p>Log out</p>
+                    </a>
+            </div>
+            </div>
+
+
+        </header>
+
+        <div class="hero-section">
+            <div class="hero-img">
+            <img src='../images/heroimage.png'>
+        </div>
+        <div class="todaySpecial">
+            <h2>Today's Special</h2>
+        <div class="box1 box">1</div>
+        <div class="box2 box">2</div>
+        <div class="box3 box">3</div>
+        <div class="box4 box">4</div>
+        </div>
+        </div>
+       <script>
+        let pMenu=document.getElementById("pMenu");
+        function pointMenu(){
+            pMenu.classList.toggle("open-menu");
+        }
+       </script>
+</body>
+</html>

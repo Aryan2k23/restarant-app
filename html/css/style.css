@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
 body{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  background:#e0e0e0
+ 
+  /* background:#e0e0e0 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  background: #000 center/cover url("../images/vecteezy_food-background-food-menu-backround_14533892.jpg") no-repeat;
+    width: 100%;
+  height: 100vh;
+}
+.logo img{
+  height: 35%;
+  width: 17%;
+  position: absolute;
+   top: 11pt; right:50rem;
 }
 .container{
   max-width: 700px;
   width: 100%;
-  background-color: #fff;
   padding: 25px 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  background-color: rgba(255, 255, 255, 0.181);
+  backdrop-filter: blur(10px);
+  margin-left: 30%;
 }
 .container .title{
   font-size: 25px;
@@ -64,7 +71,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #9b59b6;
+  border-color: #fb9200;
 }
  form .gender-details .gender-title{
   font-size: 20px;
@@ -93,7 +100,7 @@ form .input-box span.details{
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
  #dot-3:checked ~ .category label .three{
-   background: #0b13fc;
+   background: #fc570b;
    border-color: #d9d9d9;
  }
  form input[type="radio"]{
@@ -114,21 +121,21 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background-color:#4caf93
+   background-color: #de8922;
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background-color: #4c7794;
+  background-color: #825917;
   }
    a {
     text-decoration: none;
     font-size: 15px;
     line-height: 20px;
-    color: #1e5220;
+    color: #5a2a08;
 }
 a .have {
     float: right;
 }
 a:hover {
-    color: #4caf50;
+    color: #ff7310;
 }
