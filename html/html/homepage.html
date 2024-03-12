@@ -20,7 +20,10 @@
                 <div class="add-icon">
                     <i class="fa-solid fa-bars fa-2xl " onclick="pointMenu()"></i>
                 </div>
-
+                <div class="shopping-cart">
+                    <i class="fa-solid fa-cart-shopping" onclick="closeBar()"></i>
+                    <span class="quantity">0</span>
+                </div>
             </div>
              <!-- Drop-down-menu -->
              <div class="menuWrap" id="pMenu">
@@ -35,16 +38,17 @@
                     </a>
             </div>
             </div>
-
-
         </header>
 
-        <div class="hero-section">
+
+        <div class="hero-section">  
             <div class="hero-img">
             <img src='../images/heroimage.png'>
         </div>
         </div>
-
+        <div class="container">
+            
+            <div class="contain" id="contain">
         <div class="panel">
             <p style="color: #ffffff;"><u style="color: #ffffff;">Today's Special</u></p>
              <div class="all-day-option">
@@ -55,28 +59,36 @@
              </div>       
         </div>
 
-        <div class="todaySpecial">
+        <div class="todaySpecial" id="todaySpecial">
+            
+        <!-- <div class="side-bar" id="side-bar">
+            <h1>CART</h1>
+            <div class="buttons-2">
+            <button type="submit">Submit</button>
+            <button class="Cancel" onclick="closeBar()" id="side-bar">Cancel</button>
+            </div> 
+            </div> -->
             <div class="food-container">
 
                 <!-- Breakfast-column -->
 
                 <div class="col1 col">
-                    <div class="food-item">
-                        <a href="#">
+                    <div class="food-item"id="Item">
+                        <a href="#" >
                         <img src="../images/pic1.jpg" alt="">
                          <h4>Dosa</h4><p>Starting at Rs.90/-</p></a>
                 </div>
-                <div class="food-item">
+                <div class="food-item"id="Item">
                     <a href="#">
                     <img src="../images/pic2.jpeg" alt="">
                     <h4>Waffles</h4><p>Starting at Rs.120/-</p></a>
             </div>
-            <div class="food-item">
+            <div class="food-item"id="Item">
                 <a href="#">
                 <img src="../images/pic3.jpg" alt="">
                  <h4>Avacado Egg Toast</h4><p>Starting at Rs.80/-</p></a>
         </div>
-        <div class="food-item">
+        <div class="food-item"id="Item">
             <a href="#">
             <img src="../images/pic4.jpg" alt="">
             <h4>Green Salad</h4><p>Starting at Rs.70/-</p></a>
@@ -86,22 +98,22 @@
                     <!-- Lunch-column -->
 
                 <div class="col2 col">
-                    <div class="food-item">
+                    <div class="food-item"id="Item">
                         <a href="#">
                         <img src="../images/pic7.webp" alt="">
                          <h4>Chicken platter</h4><p>Starting at Rs.350/-</p></a>
                 </div>
-                <div class="food-item">
+                <div class="food-item"name="Item">
                     <a href="#">
                     <img src="../images/pic8.jpg" alt="">
                      <h4>Veg Platter</h4><p>Starting at Rs.200/-</p></a>
             </div>
-            <div class="food-item">
+            <div class="food-item"name="Item">
                 <a href="#">
                 <img src="../images/pic9.webp" alt="">
                  <h4>Butter Chicken</h4><p>Starting at Rs.500/-</p></a>
         </div>
-                    <div class="food-item">
+                    <div class="food-item"name="Item">
                         <a href="#">
                         <img src="../images/pic10.webp" alt="">
                          <h4>Panner Tikka Masala</h4><p>Starting at Rs.650/-</p></a>
@@ -111,21 +123,21 @@
                     <!-- Dinner-column -->
 
                 <div class="col3 col">
-                    <div class="food-item">
+                    <div class="food-item"id="Item">
                         <a href="#">
                         <img src="../images/pic11.webp" alt="">
                          <h4 style="text-align: center;">Pasta with Italian White Sauce</h4><p>Starting at Rs.90/-</p></a>
                 </div>   
-                <div class="food-item">
+                <div class="food-item"id="Item">
                     <a href="#"><img src="../images/pic12.jpg" alt="">
                      <h4>Palak Panner</h4><p>Starting at Rs.350/-</p></a>
             </div>   
-            <div class="food-item">
+            <div class="food-item"id="Item">
                 <a href="#">
                 <img src="../images/pic13.jpg" alt="">
                  <h4>Burrito</h4><p>Starting at Rs.120/-</p></a>
         </div>
-                    <div class="food-item">
+                    <div class="food-item"id="Item">
                         <a href="#">
                         <img src="../images/pic14.webp" alt="">
                          <h4>Punjabi Style Rajma Rice</h4><p>Starting at Rs.150/-</p></a>
@@ -135,22 +147,22 @@
                         <!-- Dessert-column -->
 
                 <div class="col4 col">
-                    <div class="food-item">
+                    <div class="food-item"id="Item">
                         <a href="#">
                         <img src="../images/pic15.jpg" alt="">
                         <h4>Red Velvet Cake</h4><p>Starting at Rs.60/-</p></a>
                 </div>
-                <div class="food-item">
+                <div class="food-item"id="Item">
                     <a href="#"> 
                     <img src="../images/pic16.jpg" alt="">
                     <h4>Pistachio Icecream</h4><p>Starting at Rs.90/-</p></a>
             </div>
-            <div class="food-item">
-                <a href="#">
+            <div class="food-item"id="Item">
+                <a href="c:\course\advance java\web desiging\web designing\web designing\03. bootstra,p [40-49]">
                     <img src="../images/pic18.jpg" alt="">
                  <h4>Macarons</h4><p>Starting at Rs.69/-</p></a>
         </div>
-                    <div class="food-item">
+                    <div class="food-item"id="Item">
                         <a href="#">
                             <img src="../images/pic17.jpg" alt="">
                          <h4>Choclate Milkshake</h4><p>Starting at Rs.110/-</p></a>
@@ -160,28 +172,28 @@
             
                 <!-- todaySpecial dishes -->
 
-        <div class="box1 box">
-            <a href="#"><img src="../images/chickenbbq.jpg" alt="">
+        <div class="box1 box"id="Item">
+            <a href="#" onclick="eve()"><img src="../images/chickenbbq.jpg" alt="">
             <div class="img-text"><h2>50% OFF</h2>
                 <p>BBQ Chicken</p>
             </div>
             </a>
         </div>
-        <div class="box2 box">  
+        <div class="box2 box"id="Item">  
                  <a href="#"><img src="../images/pizza.jpg" alt="">
                     <div class="img-text"><h2>40% OFF</h2>
                         <p>Double Cheese Chicken Pizza</p>
                     </div>
                     </a>
         </div>
-        <div class="box3 box">
+        <div class="box3 box"id="Item">
                 <a href="#"><img src="../images/sweet.png" alt="">
                     <div class="img-text"><h2>60% OFF</h2>
                         <p>Rasmalai</p>
                     </div>
                     </a>
         </div>
-        <div class="box4 box">
+        <div class="box4 box"id="Item">
                 <a href="#"><img src="../images/hotwings.jpg" alt="">
                     <div class="img-text"><h2>45% OFF</h2>
                         <p>Hot Wings</p>
@@ -189,7 +201,38 @@
                     </a>
         </div>
         </div>
-        
+        </div>
+            <div class="addCart" id="addCart">
+         <div id="cart-page" class="cart-toggle1">
+            <p id="cart-title">Cart Items</p>
+            <table>
+                <thead>
+                    <td>Item</td>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                </thead>
+                <thead>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </thead>
+            </table>
+        </div>
+
+    <div id="cart">
+        <div id="checkout" class="cart-toggle2">
+            <p id="total-item">Total Item : 5</p>
+            <p id="total-price"></p>
+           
+            <button class="cart-btn">Checkout</button>
+        </div>
+    </div>
+    </div>
+</div> 
+
+    
 
     
         <footer>
@@ -203,11 +246,29 @@
 
 
 
-       <script>
-        let pMenu=document.getElementById("pMenu");
+       <script href="../JS/app.js">let pMenu=document.getElementById("pMenu");
         function pointMenu(){
             pMenu.classList.toggle("open-menu");
         }
-       </script>
+
+        //     let openCart=document.getElementById("side-bar");
+        // function openBar(){
+        //     openCart.classList.toggle("open-bar");
+        // }
+         let closeCart=document.getElementById("contain");
+         let openCart=document.getElementById("addCart");
+            function closeBar(){
+                closeCart.classList.toggle("close");
+                openCart.classList.toggle("open");
+            }
+
+            // let addItem=document.getElementById('todaySpecial');
+            //  let anchor=addItem.querySelectorAll('a');
+            
+            
+    
+            
+            </script>
+
 </body>
 </html>
